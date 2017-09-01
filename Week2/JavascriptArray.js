@@ -125,12 +125,12 @@ FindNamesByTheFirstLetter = function(a,b)
     var upper = b.toUpperCase();
     var lower = b.toLowerCase();
     var filteredenames = a.filter(function(name)
-{
-    if(name.charAt(0) === lower || name.charAt(0) === upper)
     {
-        return name;
-    }
-})
+        if(name.charAt(0) === lower || name.charAt(0) === upper)
+        {
+            return name;
+        }
+    })
     return filteredenames;
 };
 
